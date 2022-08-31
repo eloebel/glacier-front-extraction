@@ -1,0 +1,34 @@
+#! /bin/bash
+#
+# Purpose: mask coastline
+# Author: Erik Loebel
+# Last change: 2022-08-31
+#
+# ------------------------------------------
+
+SHP_PATH=$1
+body=$2
+n=$3		# number of linestrings to extract
+
+ls_original="ls"
+files_to_process=`$ls_original ${SHP_PATH}/$body`
+
+for i in $files_to_process
+	do
+		basename="$(basename -- $i)"
+		# get UTM zone sting of scene
+		utm=`gdalsrsinfo ${SHP_PATH}/${body}/${basename}/pred_${basename}.tif -o proj4 | awk '{print $2}'`
+		# transforming frontpolygon in utm
+		ogr2ogr -t_srs " +proj=utm $utm +datum=WGS84 +units=m +no_defs" ${SHP_PATH}/${body}/${basename}/frontpolygon_TEMP.shp /scripts/Frontpolygone/${body}.shp
+		# clipping calving front by polygon
+		ogr2ogr -clipsrc ${SHP_PATH}/${body}/${basename}/frontpolygon_TEMP.shp ${SHP_PATH}/${body}/${basename}/calving_front_${basename}_masked_TEMP1.shp ${SHP_PATH}/${body}/${basename}/calving_front_${basename}.shp
+		ogr2ogr -nlt LINESTRING -explodecollections ${SHP_PATH}/${body}/${basename}/calving_front_${basename}_masked_TEMP2.shp ${SHP_PATH}/${body}/${basename}/calving_front_${basename}_masked_TEMP1.shp	
+		ogr2ogr -q -f "ESRI Shapefile" -dialect sqlite -sql "select * from calving_front_${basename}_masked_TEMP2 ORDER BY ST_NumPoints(geometry) DESC limit $n" ${SHP_PATH}/${body}/${basename}/calving_front_${basename}_masked.shp ${SHP_PATH}/${body}/${basename}/calving_front_${basename}_masked_TEMP2.shp
+		rm ${SHP_PATH}/${body}/${basename}/calving_front_${basename}_masked_TEMP*.*
+		rm ${SHP_PATH}/${body}/${basename}/frontpolygon_TEMP*.*
+	done
+
+
+
+
+

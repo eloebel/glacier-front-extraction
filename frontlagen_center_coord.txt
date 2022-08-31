@@ -1,0 +1,47 @@
+#######################################################################################################
+############################ COORDINATS [x y] OF GLACIER FRONTS IN WGS 3413 ###########################
+### "+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +k=1 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs" ###
+#######################################################################################################
+jakobshavn_isbrae -185000 -2271000
+eqip_sermia_region -198700 -2175912
+helheim 308500 -2578000
+kangerdlugssuaq 491348 -2292219
+nioghalvfjerdsbrae_a 485460 -1015450
+nioghalvfjerdsbrae_b 487488 -1024759
+nioghalvfjerdsbrae_c 489607 -1033256
+zachariae_isstrom_north 490590 -1092295
+zachariae_isstrom_south 492424 -1100941
+humboldt_a -372591 -1040314
+humboldt_b -367941 -1046798
+humboldt_c -365185 -1052808
+humboldt_d -367851 -1059043
+humboldt_e -373002 -1063471
+humboldt_f -378605 -1067493
+humboldt_g -382672 -1073141
+humboldt_h -388636 -1077117
+humboldt_i -393833 -1081771
+humboldt_j -399029 -1086425
+humboldt_k -405400 -1089001
+humboldt_l -410777 -1093169
+humboldt_m -414946 -1095309
+daugaard_jensen 558160 -1894260
+rinks_isbrae -232000 -1982000
+ingia_isbrae -261000 -1944000
+store -211100 -2138900
+ryder_glacier -88463 -883192
+academy 198800 -886000
+hagen_brae 278800 -885650
+tracy_gletscher -484000 -1250000
+hayes -340400 -1608900
+sverdrup -351200 -1526700
+upernavik_isstrom_north -303500 -1832000
+upernavik_isstrom_south -304500 -1850000
+kong_oscar -386300 -1477300
+docker_smith -430112 -1427514
+harald_moltke_brae -567000 -1344000
+waltershausen_glacier 626500 -1650000
+kangiata_nunaata_sermia -229000 -2817000
+storbreen 1233500 -668000
+upsala -15934657 -29588740
+boydell -13100000 -51884500
+drygalski -14868927 -52586488

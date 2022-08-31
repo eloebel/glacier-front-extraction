@@ -1,0 +1,41 @@
+#! /bin/bash
+#
+# Purpose: Vectorize calving front prediction from floating point ANN output mask
+#
+# Author: Erik Loebel
+# Last change: 2022-08-31
+#
+# ------------------------------------------
+
+PRED_PATH=$1
+
+ls_original="ls"
+bodies_to_process=`$ls_original $PRED_PATH`							# create list of all bodies
+for i in $bodies_to_process
+	do
+		body="$(basename -- $i)"	
+		# prediction folder
+		pred_dir="${PRED_PATH}/$body"	
+		files_to_process=`$ls_original ${PRED_PATH}/$body`			# create list of files
+
+		#create TEMP dir
+		if [ ! -d $pred_dir/TEMP ]; then
+			mkdir $pred_dir/TEMP
+		fi
+
+		for i in $files_to_process
+			do
+				#echo "      ... $i"
+				basename="$(basename -- $i)"
+				# coutour at 0,5
+				gdal_contour -q -b 1 -a ELEV -i 9999.0 -off 50.0 -f "ESRI Shapefile" $pred_dir/${basename}/pred_${basename}.tif $pred_dir/TEMP/calving_front_${basename}.shp -nln calfing_front_location -a threshold
+				#select longest linestring as calving front location
+				ogr2ogr -q -f "ESRI Shapefile" -dialect sqlite -sql "select * from calving_front_${basename} ORDER BY ST_NumPoints(geometry) DESC limit 1" $pred_dir/${basename}/calving_front_${basename}.shp $pred_dir/TEMP/calving_front_${basename}.shp
+				#ogr2ogr -t_srs EPSG:3413 -q -f "ESRI Shapefile" -dialect sqlite -sql "select * from calving_front_${basename} ORDER BY ST_NumPoints(geometry) DESC limit 1" $pred_dir/${basename}/calving_front_${basename}.shp $pred_dir/TEMP/calving_front_${basename}.shp
+		done
+		rm -r $pred_dir/TEMP
+	done
+
+
+
+
