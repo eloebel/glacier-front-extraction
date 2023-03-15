@@ -8,5 +8,5 @@ box method here
 ![calving_front_extraction_examples](https://user-images.githubusercontent.com/68990782/225434975-74692ea9-2112-49f7-bdb5-d9b1775e71a3.png)
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/68990782/225434975-74692ea9-2112-49f7-bdb5-d9b1775e71a3.png" width="800">
+<img src="https://user-images.githubusercontent.com/68990782/225434975-74692ea9-2112-49f7-bdb5-d9b1775e71a3.png" width="700">
 <p>
