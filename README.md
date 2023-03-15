@@ -5,4 +5,8 @@ Option 2 Singularity
 Option 3 use scripts provided inj this repositiry and donwload weights here (link cloud store)
 Interested in datasets -> manual here -> autoamted big set here  
 box method here
-![examples_v3](https://user-images.githubusercontent.com/68990782/225433596-d8dbdfd7-4283-4e96-a6f9-09c99b07bcff.png)
+![calving_front_extraction_examples](https://user-images.githubusercontent.com/68990782/225434975-74692ea9-2112-49f7-bdb5-d9b1775e71a3.png)
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/68990782/225434975-74692ea9-2112-49f7-bdb5-d9b1775e71a3.png" width="800">
+<p>
