@@ -3,7 +3,19 @@ We provide a containerized implementation of the presented processing system. Th
 ## Usage
 We provide three options for using this software. We recommend using the containerized implementation via Docker (option 1) or Singularity (option 2).
 ### Option 1: Docker
+```
+docker pull eloebel/glacier-front-extraction:latest
+```
+```
+sudo docker run --volume=/home/INPUT_IMAGES:/input --env glacier=zachariae_isstrom eloebel/glacier-front-extraction:latest
+```
 ### Option 2: Singularity
+```
+singularity pull docker://eloebel/glacier-front-extraction:latest
+```
+```
+singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env glacier=zachariae_isstrom glacier-front-extraction_latest.sif
+```
 ### Option 3: Download weights and use scripts provided in this repositiry
 Interested in datasets -> manual here -> autoamted big set here  
 box method here
