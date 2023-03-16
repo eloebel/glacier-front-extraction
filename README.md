@@ -7,4 +7,13 @@ We provide three options for using this software. We recommend using the contain
 ### Option 3: Download weights and use scripts provided in this repositiry
 Interested in datasets -> manual here -> autoamted big set here  
 box method here
+
+
 ![calving_front_extraction_examples](https://user-images.githubusercontent.com/68990782/225434975-74692ea9-2112-49f7-bdb5-d9b1775e71a3.png)
+
+## Contact
+**Erik Loebel**  
+TU Dresden | Geodetic Earth System Research   
+[tu-dresden.de/geo/ipg/gef](https://tu-dresden.de/bu/umwelt/geo/ipg/gef)  
+[erik.loebel@tu-dresden.de](mailto:erik.Loebel@tu-dresden.de)  
+[@ErikLoebel](https://twitter.com/erikloebel)  
