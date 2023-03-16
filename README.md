@@ -21,8 +21,7 @@ Interested in datasets -> manual here -> autoamted big set here
 box method here
 
 
-![git_examples](https://user-images.githubusercontent.com/68990782/225638176-8bec927c-b9b7-4fc9-87c6-aa0af7f3ac77.png)
-
+![git_examples](https://user-images.githubusercontent.com/68990782/225638494-63026626-d47e-4462-9d76-a92b497a3602.png)
 
 ## Contact
 **Erik Loebel**  
