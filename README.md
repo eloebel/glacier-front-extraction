@@ -4,7 +4,7 @@ We provide a containerized implementation of the presented processing system. Th
 ![workflow_v5](https://user-images.githubusercontent.com/68990782/225638941-61c5c4ca-3319-4894-92aa-f81d853dbf15.png)
 
 ## Usage
-We provide three options for using this software. We recommend using the containerized implementation via Docker (option 1) or Singularity (option 2).
+We provide three options for using this software. We recommend using the containerized implementation via Docker (Option 1) or Singularity (Option 2).
 ### Option 1: Docker
 ```
 docker pull eloebel/glacier-front-extraction:latest
