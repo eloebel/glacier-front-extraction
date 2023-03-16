@@ -1,8 +1,7 @@
 # Automated calving front delineation from multispectral satellite imagery using deep learning
-<img align="right" width="450" src="https://user-images.githubusercontent.com/68990782/225651146-858e74d5-cd9b-4bbf-8f76-86f7b33596d2.gif">
 
 We provide a containerized implementation of the presented processing system. The software automatically extracts calving front positions from Landsat-8 or Landsat-9 Level-1 data archives for glacier used within this study or at user-defined coordinates. This enables the analysis of glaciers that are outside our reference dataset or beyond the temporal frame of our study.
-
+![workflow_v5](https://user-images.githubusercontent.com/68990782/225638941-61c5c4ca-3319-4894-92aa-f81d853dbf15.png)
 
 
 ## Usage
@@ -24,7 +23,9 @@ singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env g
 ### Option 3: Use scripts provided in this repositiry
 Download model weights and use scripts provided in this repositiry
 
-![workflow_v5](https://user-images.githubusercontent.com/68990782/225638941-61c5c4ca-3319-4894-92aa-f81d853dbf15.png)
+
+![loebel_calving_fronts](https://user-images.githubusercontent.com/68990782/225654755-5d85399f-11a8-40a3-b217-dfc1cc002a63.gif)
+
 
 ## Contact
 **Erik Loebel**  
