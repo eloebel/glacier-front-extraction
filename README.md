@@ -3,6 +3,8 @@
 
 We provide a containerized implementation of the presented processing system. The software automatically extracts calving front positions from Landsat-8 or Landsat-9 Level-1 data archives for glacier used within this study or at user-defined coordinates. This enables the analysis of glaciers that are outside our reference dataset or beyond the temporal frame of our study.
 
+
+
 ## Usage
 We provide three options for using this software. We recommend using the containerized implementation via Docker (Option 1) or Singularity (Option 2).
 ### Option 1: Docker
