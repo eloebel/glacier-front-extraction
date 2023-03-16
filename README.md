@@ -21,7 +21,8 @@ Interested in datasets -> manual here -> autoamted big set here
 box method here
 
 
-![calving_front_extraction_examples](https://user-images.githubusercontent.com/68990782/225434975-74692ea9-2112-49f7-bdb5-d9b1775e71a3.png)
+![git_examples](https://user-images.githubusercontent.com/68990782/225638176-8bec927c-b9b7-4fc9-87c6-aa0af7f3ac77.png)
+
 
 ## Contact
 **Erik Loebel**  
