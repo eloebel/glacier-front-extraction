@@ -37,6 +37,9 @@ singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env g
 data folder with pre processid input can be deleted
 ### Option 3: Use scripts provided in this repositiry
 ```
+conda create --name <env_name> --file requirements.txt
+```
+```
 python GLACIER_FRONT_EXTRACTION.py daugaard_jensen
 ```
 
