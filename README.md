@@ -7,7 +7,7 @@ We provide a containerized implementation of the presented processing system. Th
 
 
 ## Usage
-We provide three options for using this software. We recommend using the containerized implementation via Docker (Option 1) or Singularity (Option 2).
+We provide three options for using this software. We recommend using the containerized implementation via Docker (Option 1) or Singularity (Option 2). Also possible to use our source code directly (Option 3).
 ### Option 1: Docker
 ```
 docker pull eloebel/glacier-front-extraction:latest
