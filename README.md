@@ -34,6 +34,7 @@ singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env g
 ```
 singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env glacier=custom --env lon=-28.57 --env lat=71.91 glacier-front-extraction_latest.sif
 ```
+data folder with pre processid input can be deleted
 ### Option 3: Use scripts provided in this repositiry
 Download model weights and use scripts provided in this repositiry
 
