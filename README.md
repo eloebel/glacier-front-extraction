@@ -31,6 +31,9 @@ singularity pull docker://eloebel/glacier-front-extraction:latest
 ```
 singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env glacier=zachariae_isstrom glacier-front-extraction_latest.sif
 ```
+```
+singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env glacier=custom --env lon=-28.57 --env lat=71.91 glacier-front-extraction_latest.sif
+```
 ### Option 3: Use scripts provided in this repositiry
 Download model weights and use scripts provided in this repositiry
 
