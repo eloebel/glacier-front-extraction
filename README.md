@@ -36,6 +36,14 @@ singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env g
 ```
 data folder with pre processid input can be deleted
 ### Option 3: Use scripts provided in this repositiry
+```
+python GLACIER_FRONT_EXTRACTION.py daugaard_jensen
+```
+
+```
+python GLACIER_FRONT_EXTRACTION.py custom -28.57 71.91
+```
+
 Download model weights and use scripts provided in this repositiry
 
 
