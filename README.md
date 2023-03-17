@@ -22,6 +22,8 @@ for example coordinates
 ```
 sudo docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=59.98 --env lat=-64.37 eloebel/glacier-front-extraction:latest
 ```
+
+prediction will be a separate folder in input conatining shp and overview and tif mask
 ### Option 2: Singularity
 ```
 singularity pull docker://eloebel/glacier-front-extraction:latest
