@@ -14,7 +14,7 @@ docker pull eloebel/glacier-front-extraction:latest
 sudo docker run --volume=/home/INPUT_IMAGES:/input --env glacier=zachariae_isstrom eloebel/glacier-front-extraction:latest
 ```
 ```
-sudo docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --lon=59.98 --lat=-64.37 eloebel/glacier-front-extraction:latest
+sudo docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=59.98 --env lat=-64.37 eloebel/glacier-front-extraction:latest
 ```
 ### Option 2: Singularity
 ```
