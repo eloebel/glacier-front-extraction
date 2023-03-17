@@ -43,7 +43,7 @@ data folder with pre processid input can be deleted
 ```
 conda create --name <env_name> --file requirements.txt
 ```
-also GDAL (tested for verion 3.5)
+
 ```
 python GLACIER_FRONT_EXTRACTION.py daugaard_jensen
 ```
