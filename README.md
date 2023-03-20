@@ -20,7 +20,7 @@ satellite scene in folder input (path has to be set)
 docker run --volume=/home/INPUT_IMAGES:/input --env glacier=zachariae_isstrom eloebel/glacier-front-extraction:latest
 ```
 
-for example coordinates (glacier front (windo 15x15 km around), decimal coordinates -180 bis 180
+for example coordinates (glacier front (windo 15x15 km around), decimal degrees -180 bis 180
 
 ```
 docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=59.98 --env lat=-64.37 eloebel/glacier-front-extraction:latest
