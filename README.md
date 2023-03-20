@@ -40,7 +40,7 @@ Glaciers outside the reference dataset can also be processed. To do this, set th
 ```
 singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env glacier=custom --env lon=-28.57 --env lat=71.91 glacier-front-extraction_latest.sif
 ```
-data folder with pre processid input can be deleted. if not it will pre delineated on subsequent container runs
+The ANN calving front prediction is stored in a separate folder within the defined input directory. The prediction contains the coastline, the calving front (LineString Shapefile), the prediction mask (geoTiff) and an overview figure. The data folder containing temporary data (especially the pre-processed satellite images) can be deleted. Otherwise, the ANN is applied to the data in subsequent container runs.
 ### Option 3: Use scripts provided in this repositiry
 Clone the repository and install all required python packages. You can use the requirements.txt with conda:
 ```
