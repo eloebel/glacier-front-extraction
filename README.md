@@ -43,6 +43,7 @@ singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env g
 ```
 data folder with pre processid input can be deleted. if not it will pre delineated on subsequent container runs
 ### Option 3: Use scripts provided in this repositiry
+Clone the repository and install all required python packages. You can use the requirements.txt with conda:
 ```
 conda create --name <env_name> --file requirements.txt
 ```
