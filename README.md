@@ -58,7 +58,6 @@ Download model weights and use scripts provided in this repositiry
 
 ![loebel_calving_fronts](https://user-images.githubusercontent.com/68990782/225654755-5d85399f-11a8-40a3-b217-dfc1cc002a63.gif)
 
-
 ## Contact
 **Erik Loebel**  
 TU Dresden | Geodetic Earth System Research   
