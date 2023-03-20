@@ -25,8 +25,8 @@ Glaciers outside the reference dataset can also be processed. To do this, set th
 ```
 docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=-28.57 --env lat=71.91 eloebel/glacier-front-extraction:latest
 ```
+The ANN calving front prediction will be saved in a separete folder inside the defined input directory. The prediction containes the coastline, the calving front (LineString Shapefile), the prediction mask (geoTiff) and an overview figure.
 
-prediction will be a separate folder in input conatining shp and overview and tif mask
 ### Option 2: Singularity
 tested for version 3.8
 does not require root
