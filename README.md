@@ -15,17 +15,15 @@ The docker container contains the code, model weights and all requirements to ru
 ```
 docker pull eloebel/glacier-front-extraction:latest
 ```
-
-satellite scene in folder input (path has to be set)
-
-```
-docker run --volume=/home/INPUT_IMAGES:/input --env glacier=zachariae_isstrom eloebel/glacier-front-extraction:latest
-```
-
-for example coordinates (glacier front (windo 15x15 km around), decimal degrees -180 bis 180
+Place the Landsat archives to be processed in an input folder. Run the container and define the path of this input folder and the glacier name.
 
 ```
-docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=59.98 --env lat=-64.37 eloebel/glacier-front-extraction:latest
+docker run --volume=/home/INPUT_IMAGES:/input --env glacier=daugaard_jensen eloebel/glacier-front-extraction:latest
+```
+Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to `custom` and define `lon` and `lat` coordinates (decimal degrees). The processing window is approximately 15 km by 15 km, centred on these defined coordinates. Example for a calving front extraction for 28.57°E
+ and 71.91°N.
+```
+docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=-28.57 --env lat=71.91 eloebel/glacier-front-extraction:latest
 ```
 
 prediction will be a separate folder in input conatining shp and overview and tif mask
