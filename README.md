@@ -39,7 +39,7 @@ singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env g
 ```
 singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env glacier=custom --env lon=-28.57 --env lat=71.91 glacier-front-extraction_latest.sif
 ```
-data folder with pre processid input can be deleted
+data folder with pre processid input can be deleted. if not it will pre delineated on subsequent container runs
 ### Option 3: Use scripts provided in this repositiry
 ```
 conda create --name <env_name> --file requirements.txt
