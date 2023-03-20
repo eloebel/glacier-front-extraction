@@ -55,7 +55,8 @@ python GLACIER_FRONT_EXTRACTION.py custom -28.57 71.91
 
 Download model weights and use scripts provided in this repositiry
 
-
+## Example
+This is the ANN applied to satellite image of Daugaard Jensen Glacer in east Greenland. For quantifying the change in calving front position you can use our implementation of the rectilinear box method.
 ![loebel_calving_fronts](https://user-images.githubusercontent.com/68990782/225654755-5d85399f-11a8-40a3-b217-dfc1cc002a63.gif)
 
 ## Contact
