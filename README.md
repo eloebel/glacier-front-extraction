@@ -11,7 +11,7 @@ Model is trained using manually delineated calving front position from 19 Greenl
 ## Usage
 We offer three options for using this software. We recommend using the containerised implementation via Docker (option 1) or Singularity (option 2). It is also possible to download the ANN weights and use the routines in this repository (option 3).
 ### Option 1: Docker
-Tested for verison 23.0
+The docker container contains the code, model weights and all requirements to run the processing system (tested for Docker verison 23.0). Download the container by running:
 ```
 docker pull eloebel/glacier-front-extraction:latest
 ```
