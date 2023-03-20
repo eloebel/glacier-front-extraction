@@ -20,8 +20,7 @@ Place the Landsat archives to be processed in an input folder. Run the container
 ```
 docker run --volume=/home/INPUT_IMAGES:/input --env glacier=daugaard_jensen eloebel/glacier-front-extraction:latest
 ```
-Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to `custom` and define `lon` and `lat` coordinates (decimal degrees) as environment variables. The processing window is approximately 15 km by 15 km, centred on these defined coordinates. Example for a calving front extraction for 28.57°E
- and 71.91°N:
+Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to `custom` and define `lon` and `lat` coordinates (decimal degrees) as environment variables. The processing window is approximately 15 km by 15 km, centred on these defined coordinates. Example for a calving front extraction for 28.57°W and 71.91°N:
 ```
 docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=-28.57 --env lat=71.91 eloebel/glacier-front-extraction:latest
 ```
@@ -50,8 +49,7 @@ Download the ANN model weights and move them to the main repository folder. Plac
 ```
 python GLACIER_FRONT_EXTRACTION.py daugaard_jensen
 ```
-Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to `custom` and define `lon` and `lat` coordinates (decimal degrees) as environment variables. The processing window is approximately 15 km by 15 km, centred on these defined coordinates. Example for a calving front extraction for 28.57°E
- and 71.91°N:
+Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to `custom` and define `lon` and `lat` coordinates (decimal degrees) as environment variables. The processing window is approximately 15 km by 15 km, centred on these defined coordinates. Example for a calving front extraction for 28.57°W and 71.91°N:
 ```
 python GLACIER_FRONT_EXTRACTION.py custom -28.57 71.91
 ```
