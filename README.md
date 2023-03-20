@@ -27,14 +27,16 @@ docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=-28
 The ANN calving front prediction will be saved in a separete folder inside the defined input directory. The prediction containes the coastline, the calving front (LineString Shapefile), the prediction mask (geoTiff) and an overview figure.
 
 ### Option 2: Singularity
-tested for version 3.8
-does not require root
+Docker containes can also be run with Singularity (tested for Singularity verison 3.8). Download the container and convert into a Singularity image by running:
 ```
 singularity pull docker://eloebel/glacier-front-extraction:latest
 ```
+Place the Landsat archives you want to process in an input folder. Run the container and bind the path to this input folder. In addition you have to bind a data folder which is needed for storing temporary data. The glacier name is defined using an environment variable.
+
 ```
-singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env glacier=zachariae_isstrom glacier-front-extraction_latest.sif
+singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env glacier=daugaard_jesen glacier-front-extraction_latest.sif
 ```
+Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to `custom` and define `lon` and `lat` coordinates (decimal degrees) as environment variables. The processing window is approximately 15 km by 15 km, centred on these defined coordinates. Example for a calving front extraction for 28.57°W and 71.91°N:
 ```
 singularity run --bind /home/INPUT_IMAGES:/input --bind /home/DATA:/data --env glacier=custom --env lon=-28.57 --env lat=71.91 glacier-front-extraction_latest.sif
 ```
