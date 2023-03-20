@@ -63,6 +63,14 @@ To quantify the change in the position of the calving front, you can use [our im
 
 ![loebel_calving_fronts](https://user-images.githubusercontent.com/68990782/225654755-5d85399f-11a8-40a3-b217-dfc1cc002a63.gif)
 
+
+## Example
+The following glacier can be directly selected by the environment variable. For these glaciers, the processing system extracts not only the entire coastline but also the masked glacier front.
+| Glacier      | environment variable |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
 ## Contact
 **Erik Loebel**  
 TU Dresden | Geodetic Earth System Research   
