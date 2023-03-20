@@ -29,6 +29,7 @@ docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=59.
 prediction will be a separate folder in input conatining shp and overview and tif mask
 ### Option 2: Singularity
 tested for version 3.8
+does not require root
 ```
 singularity pull docker://eloebel/glacier-front-extraction:latest
 ```
