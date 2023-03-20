@@ -17,13 +17,13 @@ docker pull eloebel/glacier-front-extraction:latest
 satellite scene in folder input (path has to be set)
 
 ```
-sudo docker run --volume=/home/INPUT_IMAGES:/input --env glacier=zachariae_isstrom eloebel/glacier-front-extraction:latest
+docker run --volume=/home/INPUT_IMAGES:/input --env glacier=zachariae_isstrom eloebel/glacier-front-extraction:latest
 ```
 
 for example coordinates
 
 ```
-sudo docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=59.98 --env lat=-64.37 eloebel/glacier-front-extraction:latest
+docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=59.98 --env lat=-64.37 eloebel/glacier-front-extraction:latest
 ```
 
 prediction will be a separate folder in input conatining shp and overview and tif mask
