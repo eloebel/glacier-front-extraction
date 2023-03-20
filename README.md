@@ -15,13 +15,13 @@ The docker container contains the code, model weights and all requirements to ru
 ```
 docker pull eloebel/glacier-front-extraction:latest
 ```
-Place the Landsat archives to be processed in an input folder. Run the container and define the path of this input folder and the glacier name.
+Place the Landsat archives to be processed in an input folder. Run the container and define the path of this input folder and set the glacier name as an environment variable.
 
 ```
 docker run --volume=/home/INPUT_IMAGES:/input --env glacier=daugaard_jensen eloebel/glacier-front-extraction:latest
 ```
-Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to `custom` and define `lon` and `lat` coordinates (decimal degrees). The processing window is approximately 15 km by 15 km, centred on these defined coordinates. Example for a calving front extraction for 28.57°E
- and 71.91°N.
+Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to `custom` and define `lon` and `lat` coordinates (decimal degrees) as environment variables. The processing window is approximately 15 km by 15 km, centred on these defined coordinates. Example for a calving front extraction for 28.57°E
+ and 71.91°N:
 ```
 docker run --volume=/home/INPUT_IMAGES:/input --env glacier=custom --env lon=-28.57 --env lat=71.91 eloebel/glacier-front-extraction:latest
 ```
