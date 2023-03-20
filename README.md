@@ -64,8 +64,8 @@ To quantify the change in the position of the calving front, you can use [our im
 ![loebel_calving_fronts](https://user-images.githubusercontent.com/68990782/225654755-5d85399f-11a8-40a3-b217-dfc1cc002a63.gif)
 
 
-## Glaciers
-The following glacier can be directly selected by the environment variable. For these glaciers, the processing system extracts not only the entire coastline but also the masked glacier front. Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to `custom` and define `lon` and `lat` coordinates (decimal degrees).
+## Greenland glaciers
+The following Greenland glacier can be directly selected by the environment variable. For these glaciers, the processing system extracts not only the entire coastline but also the masked glacier front. Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to `custom` and define `lon` and `lat` coordinates (decimal degrees).
 | Glacier      | environment variable |
 | ----------- | ----------- |
 | Header      | Title       |
