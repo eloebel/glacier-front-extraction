@@ -65,7 +65,7 @@ To quantify the change in the position of the calving front, you can use [our im
 
 
 ## Greenland glaciers
-The following Greenland glacier can be directly selected by the environment variable. For these glaciers, the processing system extracts not only the entire coastline but also the masked glacier front. Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to `custom` and define `lon` and `lat` coordinates (decimal degrees).
+The following Greenland glaciers can be selected directly from the environment variable. For these glaciers, the processing system extracts not only the entire coastline but also the masked glacier front. Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to custom and define the `lon` and `lat` coordinates (decimal degrees).
 | Glacier      | environment variable |
 | ----------- | ----------- |
 | Header      | Title       |
