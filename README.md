@@ -47,7 +47,7 @@ Clone the repository and install all required python packages. You can use the r
 ```
 conda create --name <env_name> --file requirements.txt
 ```
-Download the ANN model weights and move them to the main repository folder. Place the Landsat archives to be processed in the `input` folder (see placeholder).
+Download the ANN model weights from the latest release and unpack them into the main repository folder. Place the Landsat archives to be processed in the `input` folder (see placeholder).
 
 ```
 python GLACIER_FRONT_EXTRACTION.py daugaard_jensen
