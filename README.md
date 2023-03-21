@@ -68,8 +68,29 @@ To quantify the change in the position of the calving front, you can use [our im
 The following Greenland glaciers can be selected directly from the environment variable. For these glaciers, the processing system extracts not only the entire coastline but also the masked glacier front. Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to custom and define the `lon` and `lat` coordinates (decimal degrees).
 | Glacier      | environment variable |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| kangiata_nunaata_sermia      | kangiata_nunaata_sermia       |
+| helheim   | helheim        |
+| kangerdlugssuaq   | kangerdlugssuaq        |
+| jakobshavn_isbrae   | jakobshavn_isbrae        |
+| eqip_sermia_region   | eqip_sermia_region        |
+| store   | store        |
+| rinks_isbrae   | rinks_isbrae        |
+| daugaard_jensen   | daugaard_jensen        |
+| ingia_isbrae   | ingia_isbrae        |
+| upernavik_isstrom_north   | upernavik_isstrom_north        |
+| waltershausen_glacier   | waltershausen_glacier        |
+| hayes   | hayes        |
+| sverdrup   | sverdrup        |
+| kong_oscar   | kong_oscar        |
+| docker_smith   | docker_smith        |
+| harald_moltke_brae   | harald_moltke_brae        |
+| tracy_gletscher   | tracy_gletscher        |
+| humboldt   | humboldt        |
+| zachariae_isstrom   | zachariae_isstrom        |
+| nioghalvfjerdsbrae   | nioghalvfjerdsbrae        |
+| hagen_brae   | hagen_brae        |
+| academy   | academy        |
+| ryder_glacier   | ryder_glacier        |
 
 ## Contact
 **Erik Loebel**  
