@@ -74,7 +74,6 @@ The following Greenland glaciers can be selected directly from the environment v
 | Helheim Glacier   | helheim        |
 | Kangerdlussuaq Glacier   | kangerdlugssuaq        |
 | Jakobshavn Isbræ   | jakobshavn_isbrae        |
-| Eqip Sermia   | eqip_sermia_region        |
 | Store Glacier   | store        |
 | Rink Isbræ   | rinks_isbrae        |
 | Daugaard Jensen Glacier   | daugaard_jensen        |
@@ -94,6 +93,46 @@ The following Greenland glaciers can be selected directly from the environment v
 | Academy Glacier   | academy        |
 | Ryder Glacier   | ryder_glacier        |
 
+
+## Greenland glaciers
+The following Greenland glaciers can be selected directly from the environment variable. Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to custom and define the `lon` and `lat` coordinates (decimal degrees).
+| Glacier      | environment variable |
+| ----------- | ----------- |
+| Boydell Glacier      | boydell       |
+| Drygalski Glacier   | drygalski        |
+| Edgeworth Glacier   | edgeworth        |
+| Fleming Glacier   | fleming        |
+| Prospect Glacier  | prospect       |
+| Hariot Glacier   | hariot        |
+| Murphy Wilkinson Glacier    | murphy_wilkinson        |
+| Widdowson Glacier   | widdowson        |
+| Hugi Glacier   | hugi        |
+| Birley Glacier   | birley        |
+| Bleriot Glacier   | bleriot        |
+| Crane Glacier   | crane        |
+| Trooz Glacier   | trooz        |
+| Hektoria-Green-Evans Glacier system   | hektoria-green-evans      |
+| Jorum Glacier   | jorum       |
+| Cayley Glacier   | cayley       |
+| Carlson Glacier   | carlson        |
+| Clarke Glacier   | clarke        |
+| Remus Glacier  | remus        |
+| Swithinbank Glacier   | swithinbank        |
+| Valot Glacier   | valot       |
+| Avsyuk Glacier   | avsyuk        |
+| Peter Glacier   | peter       |
+| McCance Glacier   | mccance       |
+| Hopkins Glacier   | hopkins       |
+| Erskine Glacier   | erskine       |
+| Keith Glacier   | keith       |
+| Otlet Glacier   | otlet       |
+| Cadmand and Funk Glacier   | cadman_funk       |
+| Renard-Krebs Glacier   | renard_krebs       |
+| Temple Glacier   | temple       |
+| Malorad Glacier   | malorad       |
+| Pyke Glacier   | pyke      |
+| Darvari-Boryana-Desudava Glacier system   | darvari-boryana-desudava       |
+| Akaga-Sinion Glacier system,   | akaga-sinion-zaychar       |
 ## Citation
 If you find our software helpful and use it in your research, please use the following BibTeX entry.
 ````
