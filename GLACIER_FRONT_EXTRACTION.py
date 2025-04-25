@@ -38,12 +38,13 @@ elif glacier == 'humboldt':
 	subprocess.call(["scripts/pre-processing.sct", 'humboldt_k'])
 	subprocess.call(["scripts/pre-processing.sct", 'humboldt_m'])
 elif glacier == 'hektoria-green-evans':
-	print("  - glacier is hektoria-green-evans ---> 5 seperate (and overlapping) ANN predictions neccessary", flush=True)
+	print("  - glacier is hektoria-green-evans ---> 6 seperate (and overlapping) ANN predictions neccessary", flush=True)
 	subprocess.call(["scripts/pre-processing.sct", 'hektoria-green-evans_a'])
 	subprocess.call(["scripts/pre-processing.sct", 'hektoria-green-evans_b'])
 	subprocess.call(["scripts/pre-processing.sct", 'hektoria-green-evans_c'])
 	subprocess.call(["scripts/pre-processing.sct", 'hektoria-green-evans_d'])
 	subprocess.call(["scripts/pre-processing.sct", 'hektoria-green-evans_e'])
+	subprocess.call(["scripts/pre-processing.sct", 'hektoria-green-evans_f'])
 else:
 	if glacier == 'custom':
 		subprocess.call(["scripts/pre-processing.sct", glacier,lon,lat])
