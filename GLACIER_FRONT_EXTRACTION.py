@@ -2,13 +2,14 @@
 #
 # Purpose: Glacier calving front extraction from optical landsat-8 and 9 imagery
 # Author: Erik Loebel
-# Last change: 2023-02-02
+# Last change: 2025-04-25
 #
 #
 # ------------------------------------------
 
 import sys
 import subprocess
+import shutil
 
 glacier = str(sys.argv[1])
 if glacier == 'custom':
@@ -36,6 +37,13 @@ elif glacier == 'humboldt':
 	subprocess.call(["scripts/pre-processing.sct", 'humboldt_i'])
 	subprocess.call(["scripts/pre-processing.sct", 'humboldt_k'])
 	subprocess.call(["scripts/pre-processing.sct", 'humboldt_m'])
+elif glacier == 'hektoria-green-evans':
+	print("  - glacier is hektoria-green-evans ---> 5 seperate (and overlapping) ANN predictions neccessary", flush=True)
+	subprocess.call(["scripts/pre-processing.sct", 'humboldt_a'])
+	subprocess.call(["scripts/pre-processing.sct", 'humboldt_b'])
+	subprocess.call(["scripts/pre-processing.sct", 'humboldt_c'])
+	subprocess.call(["scripts/pre-processing.sct", 'humboldt_d'])
+	subprocess.call(["scripts/pre-processing.sct", 'humboldt_e'])
 else:
 	if glacier == 'custom':
 		subprocess.call(["scripts/pre-processing.sct", glacier,lon,lat])
@@ -46,3 +54,4 @@ print("  - pre processing finished", flush=True)
 ### Predicting calving front from pre processed data ###
 print('+++ INITIALIZING ANN PROCESSING +++', flush=True)
 subprocess.call(['python', 'scripts/predict_calving_front.py'])
+shutil.rmtree("data")
