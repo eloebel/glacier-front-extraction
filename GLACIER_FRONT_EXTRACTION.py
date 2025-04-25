@@ -2,7 +2,7 @@
 #
 # Purpose: Glacier calving front extraction from optical landsat-8 and 9 imagery
 # Author: Erik Loebel
-# Last change: 2025-04-25
+# Last change: 2023-02-02
 #
 #
 # ------------------------------------------
@@ -39,11 +39,11 @@ elif glacier == 'humboldt':
 	subprocess.call(["scripts/pre-processing.sct", 'humboldt_m'])
 elif glacier == 'hektoria-green-evans':
 	print("  - glacier is hektoria-green-evans ---> 5 seperate (and overlapping) ANN predictions neccessary", flush=True)
-	subprocess.call(["scripts/pre-processing.sct", 'humboldt_a'])
-	subprocess.call(["scripts/pre-processing.sct", 'humboldt_b'])
-	subprocess.call(["scripts/pre-processing.sct", 'humboldt_c'])
-	subprocess.call(["scripts/pre-processing.sct", 'humboldt_d'])
-	subprocess.call(["scripts/pre-processing.sct", 'humboldt_e'])
+	subprocess.call(["scripts/pre-processing.sct", 'hektoria-green-evans_a'])
+	subprocess.call(["scripts/pre-processing.sct", 'hektoria-green-evans_b'])
+	subprocess.call(["scripts/pre-processing.sct", 'hektoria-green-evans_c'])
+	subprocess.call(["scripts/pre-processing.sct", 'hektoria-green-evans_d'])
+	subprocess.call(["scripts/pre-processing.sct", 'hektoria-green-evans_e'])
 else:
 	if glacier == 'custom':
 		subprocess.call(["scripts/pre-processing.sct", glacier,lon,lat])
