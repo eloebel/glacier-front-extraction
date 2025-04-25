@@ -7,7 +7,7 @@ This software automatically delineates calving front positions from Landsat-8 an
 
 ![workflow_v5](https://user-images.githubusercontent.com/68990782/225638941-61c5c4ca-3319-4894-92aa-f81d853dbf15.png)
 
-The model is trained using manually delineated calving front position from 19 Greenland glaciers. We evaluated the performance of this model using three independent test datasets, including glaciers in Svalbard, at the Antarctic Peninsula and in Patagonia. The quality of the automatically extracted calving fronts is comparable to that of manually delineated calving fronts. The processing system and its validation are described in detail in [this article](https://tc.copernicus.org/preprints/tc-2023-52).
+The model is trained using manually delineated calving front position from 23 Greenland and 12 Antarctic Peninsula outlet glaciers. We evaluated the performance of this model using three independent test datasets, including glaciers in Svalbard and in Patagonia. The quality of the automatically extracted calving fronts is comparable to that of manually delineated calving fronts. The processing system and its validation are described in detail in [this article](https://tc.copernicus.org/articles/18/3315/2024/). Details of the performance specifically for the Antarctic Peninsula are also published [here](https://essd.copernicus.org/articles/17/65/2025/essd-17-65-2025.html).
 
 ## Usage
 We offer three options for using this software. We recommend using the containerized implementation via Docker (option 1) or Singularity (option 2). It is also possible to download the ANN weights and use the routines in this repository (option 3).
