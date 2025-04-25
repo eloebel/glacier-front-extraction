@@ -21,8 +21,8 @@ cd ..
 
 ### vectorizing merged prediction ###
 # coutour at 0,5
-gdal_contour -q -b 1 -a ELEV -i 9999.0 -off 50.0 -f "ESRI Shapefile" pred_${ID}.tif ${TEMP_FOLDER}/calving_front_${ID}.shp -nln calfing_front_location -a threshold
+gdal_contour -q -b 1 -a ELEV -i 9999.0 -off 50.0 -f "ESRI Shapefile" pred_${ID}.tif TEMP/calving_front_${ID}.shp -nln calfing_front_location -a threshold
 #select longest linestring as calving front location
-ogr2ogr -q -f "ESRI Shapefile" -dialect sqlite -sql "select * from calving_front_${ID} ORDER BY ST_NumPoints(geometry) DESC limit 1" calving_front_${ID}.shp ${TEMP_FOLDER}/calving_front_${ID}.shp
+ogr2ogr -q -f "ESRI Shapefile" -dialect sqlite -sql "select * from calving_front_${ID} ORDER BY ST_NumPoints(geometry) DESC limit 1" calving_front_${ID}.shp TEMP/calving_front_${ID}.shp
 
-rm -r ${TEMP_FOLDER}
+rm -r TEMP

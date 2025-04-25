@@ -239,7 +239,7 @@ if 'nioghalvfjerdsbrae_a' and 'nioghalvfjerdsbrae_b' and 'nioghalvfjerdsbrae_c' 
     GLACIER_NUMBER = 3
     subprocess.call(['python', 'scripts/merge_prediction.py', INPUT_PATH, OUTPUT_PATH, str(GLACIER_NUMBER)])
 
-if 'hektoria-green-evans_a' and 'hektoria-green-evans_b' and 'hektoria-green-evans_c' and 'hektoria-green-evans_d' and 'hektoria-green-evans_e' in test_bodies :
+if 'hektoria-green-evans_a' and 'hektoria-green-evans_b' and 'hektoria-green-evans_c' and 'hektoria-green-evans_d' and 'hektoria-green-evans_e' and 'hektoria-green-evans_f' in test_bodies :
     print('  -- Merging predictions for Hektoria-Green-Evans')
     GLACIER_NUMBER = 4
     subprocess.call(['python', 'scripts/merge_prediction.py', INPUT_PATH, OUTPUT_PATH, str(GLACIER_NUMBER)])

@@ -62,6 +62,7 @@ hektoria-green-evans_b -15757893 -52984074
 hektoria-green-evans_c -15769550 -53196992
 hektoria-green-evans_d -16009374 -52970447
 hektoria-green-evans_e -15970525 -53178240
+hektoria-green-evans_f -15944665 -52792937
 jorum -16309490 -53310250
 cayley -14742637 -51704296
 carlson -26276662 -61985355
