@@ -94,7 +94,7 @@ The following Greenland glaciers can be selected directly from the environment v
 | Ryder Glacier   | ryder_glacier        |
 
 
-## Greenland glaciers
+## Antarctic Peninsula glaciers
 The following Greenland glaciers can be selected directly from the environment variable. Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to custom and define the `lon` and `lat` coordinates (decimal degrees).
 | Glacier      | environment variable |
 | ----------- | ----------- |
