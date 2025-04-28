@@ -95,7 +95,7 @@ The following Greenland glaciers can be selected directly from the environment v
 
 
 ## Antarctic Peninsula glaciers
-The following Greenland glaciers can be selected directly from the environment variable. Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to custom and define the `lon` and `lat` coordinates (decimal degrees).
+The following Antarctic Peninsula glaciers can be selected directly from the environment variable. Glaciers outside the reference dataset can also be processed. To do this, set the glacier name to custom and define the `lon` and `lat` coordinates (decimal degrees).
 | Glacier      | environment variable |
 | ----------- | ----------- |
 | Boydell Glacier      | boydell       |
