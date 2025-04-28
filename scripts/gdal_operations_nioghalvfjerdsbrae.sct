@@ -13,13 +13,13 @@ PRED_3=$4
 ID=$5
 
 cd $TEMP_FOLDER
-gdal_calc.py -A $PRED_1 --outfile=pred_a+10.tif --calc="A+10" --quiet
-gdal_calc.py -A $PRED_2 --outfile=pred_b+10.tif --calc="A+10" --quiet
-gdal_calc.py -A $PRED_3 --outfile=pred_c+10.tif --calc="A+10" --quiet
+gdal_calc -A $PRED_1 --outfile=pred_a+10.tif --calc="A+10" --quiet
+gdal_calc -A $PRED_2 --outfile=pred_b+10.tif --calc="A+10" --quiet
+gdal_calc -A $PRED_3 --outfile=pred_c+10.tif --calc="A+10" --quiet
 gdalbuildvrt -q -separate combined.vrt pred_a+10.tif pred_b+10.tif pred_c+10.tif -overwrite
-gdal_calc.py -A combined.vrt --A_band=1 -B combined.vrt --B_band=2 --calc="((A-10)+(B-10))/2" --outfile diff_ab.tif --quiet
-gdal_calc.py -A combined.vrt --A_band=2 -B combined.vrt --B_band=3 --calc="((A-10)+(B-10))/2" --outfile diff_bc.tif --quiet
-gdal_merge.py -q -o ../pred_${ID}.tif $PRED_1 $PRED_2 $PRED_3 diff_ab.tif diff_bc.tif -init 65535 -a_nodata 65535
+gdal_calc -A combined.vrt --A_band=1 -B combined.vrt --B_band=2 --calc="((A-10)+(B-10))/2" --outfile diff_ab.tif --quiet
+gdal_calc -A combined.vrt --A_band=2 -B combined.vrt --B_band=3 --calc="((A-10)+(B-10))/2" --outfile diff_bc.tif --quiet
+gdal_merge -q -o ../pred_${ID}.tif $PRED_1 $PRED_2 $PRED_3 diff_ab.tif diff_bc.tif -init 65535 -a_nodata 65535
 cd ..
 
 ### vectorizing merged prediction ###
