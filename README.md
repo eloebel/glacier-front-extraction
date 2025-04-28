@@ -1,7 +1,7 @@
 # Automated calving front delineation from multispectral satellite imagery using deep learning
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://zenodo.org/badge/330633305.svg)](https://zenodo.org/badge/latestdoi/330633305)
+[![DOI](https://zenodo.org/badge/330633305.svg)](https://doi.org/10.5281/zenodo.7755773)
 
 This software automatically delineates calving front positions from Landsat-8 and Landsat-9 Level-1 data archives. It processes multispectral imagery using a specialized artificial neural network (ANN). In particular, it uses a convolutional neural network of the U-Net architecture to semantically segment images into a glacier/land and water class. The glacier calving front, which is described by the boundary between these two classes, is then extracted by vectorizing and masking the model prediction. The figure below gives a broad overview of the processing workflow.
 
