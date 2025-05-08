@@ -24,10 +24,12 @@ for i in $files_to_process
 			mkdir data/OUT/TEMP
 		fi
 		# unpacking
-		if [ "$glacier" != "zachariae_isstrom_south" ] && [ "$glacier" != "nioghalvfjerdsbrae_b" ] && [ "$glacier" != "nioghalvfjerdsbrae_c" ] && [ "$glacier" != "humboldt_c" ] && [ "$glacier" != "humboldt_e" ] && [ "$glacier" != "humboldt_g" ] && [ "$glacier" != "humboldt_i" ] && [ "$glacier" != "humboldt_k" ] && [ "$glacier" != "humboldt_m" ]; then
-			echo "  - unpacking satellite scene ---> $i"
-			tar -xf $i --directory data/OUT/TEMP
-		fi
+		#if [ "$glacier" != "zachariae_isstrom_south" ] && [ "$glacier" != "nioghalvfjerdsbrae_b" ] && [ "$glacier" != "nioghalvfjerdsbrae_c" ] && [ "$glacier" != "humboldt_c" ] && [ "$glacier" != "humboldt_e" ] && [ "$glacier" != "humboldt_g" ] && [ "$glacier" != "humboldt_i" ] && [ "$glacier" != "humboldt_k" ] && [ "$glacier" != "humboldt_m" ]; then
+		#	echo "  - unpacking satellite scene ---> $i"
+		#	tar -xf $i --directory data/OUT/TEMP
+		#fi
+		echo "  - unpacking satellite scene ---> $i"
+		tar -xf $i --directory data/OUT/TEMP
 		
 		# croping bands by centre coordinates
 		echo "  - croping bands by centre coordinates"
@@ -72,10 +74,11 @@ for i in $files_to_process
 		
 		# moving and deleting
 		mv data/OUT/TEMP/B*.tif data/OUT/$glacier/$aq_date
-		if [ "$glacier" != "zachariae_isstrom_north" ] && [ "$glacier" != "nioghalvfjerdsbrae_a" ] && [ "$glacier" != "nioghalvfjerdsbrae_b" ] && [ "$glacier" != "humboldt_a" ] && [ "$glacier" != "humboldt_c" ] && [ "$glacier" != "humboldt_e" ] && [ "$glacier" != "humboldt_g" ] && [ "$glacier" != "humboldt_i" ] && [ "$glacier" != "humboldt_k" ]; then
-			echo "  - removing raw unpacked satellite files"
-			rm -r data/OUT/TEMP
-		fi
+		#if [ "$glacier" != "zachariae_isstrom_north" ] && [ "$glacier" != "nioghalvfjerdsbrae_a" ] && [ "$glacier" != "nioghalvfjerdsbrae_b" ] && [ "$glacier" != "humboldt_a" ] && [ "$glacier" != "humboldt_c" ] && [ "$glacier" != "humboldt_e" ] && [ "$glacier" != "humboldt_g" ] && [ "$glacier" != "humboldt_i" ] && [ "$glacier" != "humboldt_k" ]; then
+		#	echo "  - removing raw unpacked satellite files"
+		#	rm -r data/OUT/TEMP
+		#fi
+		rm -r data/OUT/TEMP
 		
 		# perfoming spectral analysis
 		python scripts/spectral_pre-processing.py $aq_date $glacier
